@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cash Register</title>
+    <style></style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="heading">Cash Register Manager</h1>
+        <p class="description">This is a cash register app which returns change in minimum number of notes after you enter bill amount and the amount you paid.</p>
+        <label class="label" for="bill-amount">Bill amount</label>
+        <input id="bill-amount" type="number" />
+        <button id="next-button">Next</button>
+
+        <div id="cash-div">
+            <label class="label" for="cash-given">Cash you gave</label>
+            <input id="cash-given" type="number" />
+            <button id="check-button"><strong>Count</strong></button>
+        </div>
+
+        <p id="error-message"></p>
+
+        <table class="change-table">
+            <caption>Return change</caption>
+            <tr>
+                <th>No. of notes</th>
+                <td class="typeNo-Of-Notes"></td>
+                <td class="typeNo-Of-Notes"></td>
+                <td class="typeNo-Of-Notes"></td>
+                <td class="typeNo-Of-Notes"></td>
+                <td class="typeNo-Of-Notes"></td>
+                <td class="typeNo-Of-Notes"></td>
+                <td class="typeNo-Of-Notes"></td>
+                <td class="typeNo-Of-Notes"></td>
+            </tr>
+            <tr>
+                <th>Types of notes</th>
+                <td class="rs">2000</td>
+                <td class="rs">500</td>
+                <td class="rs">100</td>
+                <td class="rs">50</td>
+                <td class="rs">20</td>
+                <td class="rs">10</td>
+                <td class="rs">5</td>
+                <td class="rs">1</td>
+            </tr>
+        </table>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
